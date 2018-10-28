@@ -2,7 +2,9 @@
 
 namespace AqBanking;
 
-class HbciVersionTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class HbciVersionTest extends TestCase
 {
     /**
      * @test

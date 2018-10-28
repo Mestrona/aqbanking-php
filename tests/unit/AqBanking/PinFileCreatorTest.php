@@ -4,8 +4,9 @@ namespace AqBanking;
 
 use AqBanking\PinFile\PinFileCreator;
 use org\bovigo\vfs\vfsStream;
+use PHPUnit\Framework\TestCase;
 
-class PinFileCreatorTest extends \PHPUnit_Framework_TestCase
+class PinFileCreatorTest extends TestCase
 {
     /**
      * @test
@@ -49,7 +50,7 @@ class PinFileCreatorTest extends \PHPUnit_Framework_TestCase
     {
         $sut = new PinFileCreator('/no/such/dir');
 
-        $this->setExpectedException('\InvalidArgumentException', 'is not a directory');
+        $this->expectException('\InvalidArgumentException');
         $sut->createFile('12345', $this->createDummyUser());
     }
 
@@ -64,7 +65,7 @@ class PinFileCreatorTest extends \PHPUnit_Framework_TestCase
 
         $sut = new PinFileCreator($pinFileDirMock);
 
-        $this->setExpectedException('\InvalidArgumentException', 'is not writable');
+        $this->expectException('\InvalidArgumentException');
         $sut->createFile('12345', $this->createDummyUser());
     }
 

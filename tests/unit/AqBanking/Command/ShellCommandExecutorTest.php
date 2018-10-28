@@ -2,7 +2,9 @@
 
 namespace AqBanking\Command;
 
-class ShellCommandExecutorTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class ShellCommandExecutorTest extends TestCase
 {
     public function testCanExecuteCommand()
     {

@@ -3,8 +3,9 @@
 namespace AqBanking\Command;
 
 use AqBanking\Command\ShellCommandExecutor\Result;
+use PHPUnit\Framework\TestCase;
 
-class CheckAqBankingCommandTest extends \PHPUnit_Framework_TestCase
+class CheckAqBankingCommandTest extends TestCase
 {
     protected function tearDown()
     {

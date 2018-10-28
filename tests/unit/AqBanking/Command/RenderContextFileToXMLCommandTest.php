@@ -4,8 +4,9 @@ namespace AqBanking\Command;
 
 use AqBanking\Command\ShellCommandExecutor\Result;
 use AqBanking\ContextFile;
+use PHPUnit\Framework\TestCase;
 
-class RenderContextFileToXMLCommandTest extends \PHPUnit_Framework_TestCase
+class RenderContextFileToXMLCommandTest extends TestCase
 {
     public function testCanIssueCorrectRenderCommand()
     {

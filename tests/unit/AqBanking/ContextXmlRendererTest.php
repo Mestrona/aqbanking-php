@@ -1,10 +1,13 @@
 <?php
+/** @noinspection PhpUndefinedMethodInspection */
+/** @noinspection PhpParamsInspection */
 
 namespace AqBanking;
 
 use Money\Money;
+use PHPUnit\Framework\TestCase;
 
-class ContextXmlRendererTest extends \PHPUnit_Framework_TestCase
+class ContextXmlRendererTest extends TestCase
 {
     /**
      * @test
@@ -67,7 +70,8 @@ class ContextXmlRendererTest extends \PHPUnit_Framework_TestCase
 
         $sut = new ContextXmlRenderer($domDocument);
 
-        $this->setExpectedException('\RuntimeException');
+        $this->expectException('\RuntimeException');
+
         $sut->getTransactions();
     }
 
@@ -82,7 +86,7 @@ class ContextXmlRendererTest extends \PHPUnit_Framework_TestCase
 
         $sut = new ContextXmlRenderer($domDocument);
 
-        $this->setExpectedException('\RuntimeException');
+        $this->expectException('\RuntimeException');
         $sut->getTransactions();
     }
 
@@ -97,7 +101,7 @@ class ContextXmlRendererTest extends \PHPUnit_Framework_TestCase
 
         $sut = new ContextXmlRenderer($domDocument);
 
-        $this->setExpectedException('\AqBanking\RuntimeException');
+        $this->expectException('\AqBanking\RuntimeException');
         $sut->getTransactions();
     }
 }
