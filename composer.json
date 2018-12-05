@@ -23,7 +23,7 @@
     "require": {
         "ext-dom": "*",
         "php": ">=5.3.0",
-        "moneyphp/money": "^3.1"
+        "moneyphp/money": "^3.2"
     },
     "require-dev": {
         "mockery/mockery": "dev-master",
