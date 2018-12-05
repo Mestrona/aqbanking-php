@@ -6,13 +6,16 @@
         convertWarningsToExceptions = "true"
         processIsolation            = "false"
         stopOnFailure               = "false"
-        strict                      = "true"
-        syntaxCheck                 = "false"
         verbose                     = "true"
-        bootstrap                   = "bootstrap.php" >
+        bootstrap                   = "vendor/autoload.php" >
+    <testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/unit</directory>
+        </testsuite>
+    </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">../src</directory>
+            <directory suffix=".php">./src</directory>
         </whitelist>
     </filter>
 </phpunit>

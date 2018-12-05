@@ -2,7 +2,9 @@
 
 namespace AqBanking\Command\ShellCommandExecutor;
 
-class ResultAnalyzerTest extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class ResultAnalyzerTest extends TestCase
 {
     public function testEmptyResultIsNoError()
     {

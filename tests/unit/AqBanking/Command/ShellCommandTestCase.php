@@ -2,7 +2,9 @@
 
 namespace AqBanking\Command;
 
-class ShellCommandTestCase extends \PHPUnit_Framework_TestCase
+use PHPUnit\Framework\TestCase;
+
+class ShellCommandTestCase extends TestCase
 {
     protected function tearDown()
     {

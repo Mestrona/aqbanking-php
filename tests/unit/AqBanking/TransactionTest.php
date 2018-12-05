@@ -4,8 +4,9 @@ namespace AqBanking;
 
 use Money\Currency;
 use Money\Money;
+use PHPUnit\Framework\TestCase;
 
-class TransactionTest extends \PHPUnit_Framework_TestCase
+class TransactionTest extends TestCase
 {
     /**
      * @test
