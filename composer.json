@@ -1,5 +1,5 @@
 {
-    "name": "juit/aqbanking-php",
+    "name": "mestrona/aqbanking-php",
     "type": "library",
     "description": "A wrapper to use AqBanking CLI from a PHP context",
     "license": "MIT",
@@ -9,8 +9,17 @@
             "email": "ju@juit.de",
             "homepage": "http://juit.de",
             "role": "developer"
+        },
+        {
+            "name": "Alexander Menk",
+            "email": "menk@mestrona.net",
+            "homepage": "http://mestrona.net",
+            "role": "maintainer"
         }
     ],
+    "replace": {
+        "juit/aqbanking-php": "*"
+    },
     "require": {
         "ext-dom": "*",
         "php": ">=5.3.0",
