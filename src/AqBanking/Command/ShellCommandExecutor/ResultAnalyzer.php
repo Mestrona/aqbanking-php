@@ -16,6 +16,7 @@ class ResultAnalyzer
         '/A TLS packet with unexpected length was received\./',
         '/Bad IBAN \(country code not in upper case\)/',       
         '/===== Executing Jobs =====/',
+        '/===== Getting Certificate =====/',
     );
 
     /**
